@@ -8,11 +8,15 @@ import { ActionSheetPageRoutingModule } from './action-sheet-routing.module';
 
 import { ActionSheetPage } from './action-sheet.page';
 
+// components 
+import { ComponentsModule  } from '../../components/components.module'
+
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
+    ComponentsModule,
     ActionSheetPageRoutingModule
   ],
   declarations: [ActionSheetPage]
