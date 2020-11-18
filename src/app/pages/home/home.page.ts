@@ -24,6 +24,11 @@ export class HomePage implements OnInit {
     icon: 'logo-apple-appstore',
     name: 'Alert',
     redirectTo: '/alert'
+  },
+  {
+    icon: 'beaker-outline',
+    name: 'avatar',
+    redirectTo: '/avatar'
   }
 ];
 
