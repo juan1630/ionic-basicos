@@ -29,6 +29,16 @@ export class HomePage implements OnInit {
     icon: 'beaker-outline',
     name: 'avatar',
     redirectTo: '/avatar'
+  },
+  {
+    icon: 'radio-button-off-outline',
+    name:'Buttons',
+    redirectTo: '/button'
+  },
+  {
+    icon: 'card-outline',
+    name: 'Cards',
+    redirectTo: '/card'
   }
 ];
 
