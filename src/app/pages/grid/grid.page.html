@@ -1,0 +1,23 @@
+<app-header></app-header>
+
+
+<ion-content>
+
+    <ion-grid fixed>
+        <ion-row>
+            <!-- la propiedad de la columna, son hasta 12 columnas  -->
+            <ion-col size="12" size-lg="3" *ngFor="let item of [1,1,1,1,1,1,1,1]">
+                <ion-card>
+                    <ion-img src="assets/img/stan-lee.jpg"></ion-img>
+                    <ion-card-header>
+                        <ion-card-subtitle>Awesome Subtitle</ion-card-subtitle>
+                        <ion-card-title>Awesome Title</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, omnis saepe ipsa commodi officia, rerum non tempora, iusto similique maxime exercitationem sequi ea officiis! Repudiandae iste itaque accusamus ut similique!
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
