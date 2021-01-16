@@ -1,0 +1,49 @@
+<app-header></app-header>
+
+
+<ion-content>
+
+    <!--  I List nos ayuda a manejar los inputs  -->
+    <ion-list>
+        <ion-list-header>
+            <ion-label> Input normal </ion-label>
+            <ion-button>{{ nombre }}</ion-button>
+        </ion-list-header>
+
+        <ion-item>
+            <ion-label> Nombre: </ion-label>
+            <ion-input type="text" placeholder="Nombre del usuario" [(ngModel)]="nombre"></ion-input>
+        </ion-item>
+
+    </ion-list>
+
+
+    <!--  IMPORTA POR DEFECTO EL MODULO DE LOS FORMS -->
+    <form #formulario='ngForm' (ngSubmit)="onSubmit(   formulario )">
+
+        <ion-list>
+            <ion-list-header>
+                <ion-label> Formulario Valido <strong>
+                  {{ formulario.valid }}
+                </strong> </ion-label>
+            </ion-list-header>
+
+            <ion-item>
+                <ion-label> Email: </ion-label>
+                <ion-input pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required name="email" required [(ngModel)]="usuario.email" type="text" placeholder="Email"></ion-input>
+            </ion-item>
+
+            <ion-item>
+                <ion-label> Password: </ion-label>
+                <ion-input type="password" name="password" required [(ngModel)]="usuario.password" placeholder="Password"></ion-input>
+            </ion-item>
+
+            <ion-button type="submit" [disabled]="formulario.invalid" expand="block" fill="clear" shape="round">
+                Enviar!
+            </ion-button>
+
+        </ion-list>
+
+    </form>
+
+</ion-content>
