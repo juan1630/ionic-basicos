@@ -35,6 +35,7 @@ export class ListPage implements OnInit {
     
     delete(usuario){
       this.ionList.closeSlidingItems();
+      
     }
 
 
